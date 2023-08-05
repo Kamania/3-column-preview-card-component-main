@@ -1,0 +1,44 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*use for paragraph*/
+    --very-light-gray: hsl(0, 0%, 95%) /* use for background, headings, buttons */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*font-family: 'Big Shoulders Display', cursive;*/
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+body, .title, .btn-more {
+    background-color: var(--very-light-gray);
+}
+
+.description {
+    color: var(--transparent-white);
+}
+
+@media (max-width: 375px) {
+    body {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 376px) {
+    body {
+        max-width: 1092px;
+    }
+}
