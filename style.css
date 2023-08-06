@@ -14,31 +14,103 @@
 }
 
 body {
-    /*font-family: 'Big Shoulders Display', cursive;*/
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
-    height: 100vh;
+    height: 100%;
     display: grid;
     justify-content: center;
     align-content: center;
 }
 
-body, .title, .btn-more {
+body,.btn-more {
     background-color: var(--very-light-gray);
+}
+
+.title{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 1.6em;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
 }
 
 .description {
     color: var(--transparent-white);
+    line-height: 1.6em;
+    font-weight: 100;
 }
 
+.container{
+    border-radius: 10px;
+    display: grid;
+}
+
+.category{
+    padding: 2em;
+}
+
+.orange{
+    background-color: var(--bright-orange);
+}
+
+.orange .btn-more{
+    color: var(--bright-orange);
+}
+
+.cyan{
+    background-color: var(--dark-cyan);
+}
+
+.cyan .btn-more{
+    color: var(--dark-cyan);
+}
+
+.dark-cyan{
+    background-color: var(--very-dark-cyan);
+}
+
+.dark-cyan .btn-more{
+    color: var(--very-dark-cyan);
+}
+
+.car-icon{
+    width: 3em;
+}
+
+.btn-more{
+    border: none;
+    border-radius: 20px;
+    padding: .8em 2em;
+    align-self: start;
+}
+
+
 @media (max-width: 375px) {
-    body {
+    .container {
         max-width: 350px;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .category{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+        padding: 4em;
+    }
+
+    .orange{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .dark-cyan {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
 
 @media (min-width: 376px) {
-    body {
+    .container {
         max-width: 1092px;
     }
 }
