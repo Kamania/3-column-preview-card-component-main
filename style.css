@@ -131,7 +131,7 @@ body,.btn-more {
         height: 100vh;
     }
     .container {
-        max-width: 992px;
+        max-width: 815px;
         grid-template-columns: repeat(3, 1fr);
     }
     .category{
